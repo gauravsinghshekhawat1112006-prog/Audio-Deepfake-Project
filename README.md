@@ -7,7 +7,7 @@ A PyTorch and Streamlit-based machine learning pipeline designed to classify aud
 **Model Architecture:** A ResNet18 Convolutional Neural Network (CNN). The ImageNet classification head was stripped and replaced with a custom binary classification head (Flatten -> Linear -> BatchNorm -> ReLU -> Dropout -> Linear -> Sigmoid).
 **Loss & Optimization:** Weighted Binary Cross-Entropy (BCE) Loss was utilized to handle class imbalances, optimized via Adam with a ReduceLROnPlateau scheduler.
 
-## 📊 Performance Report & Metrics
+## Performance Report & Metrics
 The model was evaluated on a strictly held-out test dataset, yielding the following results based on an optimal validation threshold of **0.27**:
 
 **Accuracy:** 51.67%
